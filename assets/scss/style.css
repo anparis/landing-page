@@ -1,0 +1,570 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font-family: "Poppins", sans-serif;
+  text-decoration: inherit;
+}
+
+.blog .blog-post figure img, .products-features .card-container > *, .pricing .card-container > * a, .creativity .left a, .get-started .text-started a.start-button {
+  border-radius: 5px;
+}
+
+.pricing .card-container > * {
+  border-radius: 10px;
+}
+
+.pricing, .blog, .get-started .text-started, .team, .products-features .card-container > * {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.get-started .text-started h2, .products-features .card-container > * h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.landing-page .landing-page_description .left form > *, .landing-page .landing-page_description .left form {
+  border-radius: 2rem;
+  border: none;
+}
+
+.get-started .text-started a.start-button {
+  background-color: transparent;
+  border: 1px solid white;
+  color: inherit;
+  padding: 10px 30px;
+}
+
+.pricing .card-container > * a, .creativity .left a {
+  background-color: #598ffe;
+  color: white;
+  padding: 10px 25px;
+}
+
+.pricing .card-container > *, .blog .blog-post figure, .products-features .card-container > * {
+  width: 33.33%;
+}
+
+.team .team-profiles > *, .team .numbers > * {
+  width: 25%;
+}
+
+.products-features .card-container > * {
+  aspect-ratio: 1/1;
+  color: white;
+  background: radial-gradient(#c0dcf6, #4295b9);
+  padding: 30px;
+  margin: 10px;
+  text-align: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  transition: 0.3s ease-out;
+}
+
+.pricing .card-container > * {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  text-align: center;
+  background-color: white;
+}
+
+.team .team-profiles > * > * {
+  text-align: center;
+  line-height: 1.5rem;
+}
+.team .team-profiles > * > * img {
+  transition: 0.3s ease-out;
+  width: 100%;
+  border-radius: 50%;
+  filter: grayscale(100%);
+  display: block;
+  margin: auto;
+}
+.team .team-profiles > * > * a {
+  border-radius: 50%;
+  display: block;
+  height: 25px;
+  line-height: 25px;
+  width: 25px;
+  font-size: 15px;
+  text-align: center;
+  background-color: white;
+  color: black;
+  margin: 5px;
+}
+.blog .blog-post figure figcaption, .swiper-slide figure figcaption, .team .team-profiles > * > * figcaption {
+  margin-top: 10px;
+}
+.blog .blog-post figure figcaption p.name, .swiper-slide figure figcaption p.name, .team .team-profiles > * > * figcaption p.name {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: inherit;
+}
+.blog .blog-post figure figcaption p, .swiper-slide figure figcaption p, .team .team-profiles > * > * figcaption p {
+  font-size: 0.9rem;
+  color: rgba(133, 131, 131, 0.711);
+}
+
+.numbers {
+  display: flex;
+  margin: 50px 0 50px 0;
+  flex-wrap: wrap;
+  line-height: 1.5rem;
+}
+.numbers div {
+  text-align: center;
+}
+.numbers div p.stats {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: inherit;
+}
+.numbers div p {
+  color: rgba(133, 131, 131, 0.711);
+}
+
+.base, .get-started {
+  text-align: center;
+  justify-content: center;
+}
+.base h2, .get-started h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  line-height: 3rem;
+}
+.base p, .get-started p {
+  color: rgba(133, 131, 131, 0.711);
+  font-size: 1.1rem;
+  margin-bottom: 60px;
+}
+
+input {
+  all: unset;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a:hover {
+  opacity: 50%;
+}
+
+.landing-page {
+  height: 100vh;
+  background: radial-gradient(#91c9f9, #2d89b7);
+  padding: 25px 5%;
+}
+.landing-page header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 80px;
+  flex-wrap: wrap;
+}
+.landing-page header a.logo {
+  color: white;
+  font-size: 2rem;
+  font-weight: 800;
+}
+.landing-page header nav {
+  display: flex;
+}
+.landing-page header nav #ul-1 {
+  flex-wrap: wrap;
+  display: flex;
+}
+.landing-page header nav #ul-1 li a {
+  color: white;
+  text-transform: uppercase;
+  margin: 0 10px;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.landing-page header #ul-2 {
+  display: flex;
+}
+.landing-page header #ul-2 a {
+  font-size: 1.2rem;
+  color: white;
+  padding: 0 10px;
+}
+.landing-page .landing-page_description {
+  display: flex;
+  align-items: center;
+  gap: 8%;
+  padding: 0 50px;
+}
+.landing-page .landing-page_description .left {
+  width: 50%;
+}
+.landing-page .landing-page_description .left section {
+  width: 100%;
+}
+.landing-page .landing-page_description .left section > * {
+  margin-bottom: 30px;
+}
+.landing-page .landing-page_description .left section h1 {
+  font-weight: 800;
+  font-size: 2.6rem;
+  line-height: 1.3em;
+}
+.landing-page .landing-page_description .left form {
+  padding: 5px;
+  width: 90%;
+  min-width: 325px;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+}
+.landing-page .landing-page_description .left form input {
+  font-size: smaller;
+  flex-grow: 2;
+  font-weight: 500;
+  color: rgba(133, 131, 131, 0.711);
+  padding: 10px;
+}
+.landing-page .landing-page_description .left form button {
+  padding: 10px 1.2rem;
+  background-color: #4193b9;
+  color: white;
+  cursor: pointer;
+}
+.landing-page .landing-page_description .left form button:hover {
+  background-color: #69b9de;
+}
+.landing-page .landing-page_description figure {
+  width: 70%;
+}
+.landing-page .landing-page_description figure img {
+  width: 103%;
+}
+
+.products-features {
+  height: 100vh;
+  padding: 100px 120px 0 120px;
+}
+.products-features .card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.products-features .card-container > * {
+  min-width: 300px;
+  max-width: 300px;
+}
+.products-features .card-container > * i {
+  font-size: 3rem;
+  margin-bottom: 35px;
+}
+.products-features .card-container > * h3 {
+  margin-bottom: 25px;
+}
+.products-features .card-container > *:hover {
+  transform: translateY(-10px);
+}
+
+.team {
+  height: 100vh;
+  padding: 0 130px;
+}
+.team .team-profiles {
+  display: flex;
+}
+.team .team-profiles > * > * .img-overflow {
+  margin: auto;
+  width: 70%;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+.team .team-profiles > * > * .icons-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.8s ease;
+  opacity: 0%;
+}
+.team .team-profiles > * > * .img-overflow:hover img {
+  filter: inherit;
+  transform: scale(1.2);
+}
+.team .team-profiles > * > * .img-overflow:hover .icons-hover {
+  transform: translate(30%, 30%);
+  opacity: 100%;
+}
+
+.get-started {
+  position: relative;
+  padding: 120px 0;
+}
+.get-started .text-started {
+  align-items: center;
+  color: white;
+}
+.get-started .text-started p {
+  color: inherit;
+  margin-bottom: 40px;
+}
+.get-started .text-started a:hover {
+  opacity: inherit;
+  background-color: white;
+  color: rgb(0, 0, 0);
+}
+.get-started ::before {
+  content: "";
+  background: url("../img/Lounge.png") no-repeat fixed center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  filter: brightness(50%);
+  z-index: -1;
+}
+
+.clients {
+  height: 100vh;
+  padding: 10% 15%;
+  background-color: #f5f6fb;
+}
+
+.swiper {
+  width: 100%;
+  height: 70%;
+}
+
+.img-overflow {
+  position: relative;
+}
+
+.img-icon {
+  position: relative;
+  margin: auto;
+  width: 100px;
+}
+.img-icon .icons {
+  height: 30px;
+  width: 30px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 30px;
+  font-size: 22px;
+  color: #3f8efc;
+  text-align: center;
+}
+.img-icon .icons iconify-icon {
+  margin-top: 3px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide figure {
+  margin-bottom: 30px;
+}
+.swiper-slide img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.blog {
+  height: 100vh;
+  padding: 0 130px 0 130px;
+}
+.blog .blog-post {
+  display: flex;
+  gap: 4%;
+}
+.blog .blog-post figure {
+  position: relative;
+}
+.blog .blog-post figure .user-date {
+  color: white;
+  position: absolute;
+  top: 0;
+  margin: 5%;
+  opacity: 0;
+}
+.blog .blog-post figure img {
+  width: 100%;
+  display: block;
+}
+.blog .blog-post figure figcaption > * {
+  margin-bottom: 10px;
+}
+.blog .blog-post figure figcaption a {
+  color: #4193b9;
+}
+.blog .blog-post figure .img-hover:hover img {
+  filter: brightness(40%);
+}
+.blog .blog-post figure .img-hover:hover .user-date {
+  opacity: 100%;
+}
+
+.creativity {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  gap: 5%;
+  padding: 0 110px 0 110px;
+}
+.creativity .left {
+  width: 55%;
+}
+.creativity .left .base, .creativity .left .get-started {
+  text-align: left;
+}
+.creativity .left .base > *, .creativity .left .get-started > * {
+  padding: 0;
+}
+.creativity .left .base p, .creativity .left .get-started p {
+  margin-bottom: 60px;
+}
+.creativity .left .numbers {
+  margin-top: 0;
+}
+.creativity .left .numbers > * {
+  text-align: left;
+}
+.creativity .left .numbers > :first-child {
+  margin-right: 30px;
+}
+.creativity figure {
+  width: 50%;
+}
+.creativity figure img {
+  width: 100%;
+}
+
+.check {
+  color: #6b9c62;
+}
+
+.xmark {
+  color: rgb(159, 5, 5);
+}
+
+.pricing {
+  height: 100vh;
+  background-color: rgba(243, 243, 243, 0.5725490196);
+  padding: 0 15% 0 15%;
+}
+.pricing .card-container {
+  display: flex;
+  width: auto;
+  gap: 4%;
+}
+.pricing .card-container .card-2 {
+  position: relative;
+}
+.pricing .card-container .card-2 .sale {
+  background-color: #2d68dd;
+  color: white;
+  position: absolute;
+  padding: 13px;
+  top: 0px;
+  right: 0px;
+  border-radius: 0 10px;
+  font-size: 0.9rem;
+  line-height: 0.9rem;
+}
+.pricing .card-container > * {
+  padding: 20px;
+}
+.pricing .card-container > * .specifications {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  line-height: 2.3rem;
+  font-size: 0.9rem;
+}
+.pricing .card-container > * .specifications i {
+  margin-right: 4px;
+}
+.pricing .card-container > * p.name {
+  font-weight: 600;
+}
+.pricing .card-container > * p .big-number {
+  color: #598ffe;
+  font-size: 3rem;
+  position: relative;
+}
+.pricing .card-container > * p .big-number .currency, .pricing .card-container > * p .big-number .currency-3, .pricing .card-container > * p .big-number .currency-2, .pricing .card-container > * p .big-number .currency-1 {
+  font-size: 1.5rem;
+  position: absolute;
+}
+.pricing .card-container > * p .big-number .currency-1 {
+  top: 8px;
+  right: 30px;
+}
+.pricing .card-container > * p .big-number .currency-2 {
+  top: 8px;
+  right: 45px;
+}
+.pricing .card-container > * p .big-number .currency-3 {
+  top: 8px;
+  right: 58px;
+}
+.pricing .card-container > * p .duration {
+  color: rgba(133, 131, 131, 0.711);
+  font-size: smaller;
+  font-weight: 500;
+}
+.pricing .card-container > * a {
+  margin-top: 20px;
+  display: block;
+  padding: 5px 0;
+  width: 100%;
+}
+.pricing .card-container div:nth-child(2) {
+  transform: translate(0, -15px);
+}
+
+footer {
+  background-color: black;
+  color: rgba(133, 131, 131, 0.711);
+  text-align: center;
+  padding: 6% 15%;
+}
+footer > * {
+  margin-bottom: 15px;
+}
+footer a {
+  color: rgba(133, 131, 131, 0.711);
+}
+footer .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3%;
+}
+footer .icons a {
+  border-radius: 30px;
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  width: 30px;
+  font-size: 15px;
+  text-align: center;
+  border: 1.5px solid rgba(133, 131, 131, 0.711);
+}
+footer p.terms {
+  display: flex;
+  justify-content: center;
+  gap: 3%;
+}/*# sourceMappingURL=style.css.map */
